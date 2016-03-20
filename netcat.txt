@@ -1,7 +1,3 @@
 Web Server
 
-I think this is my favorite trick. Did you ever need to set up simple makeshift webserver that would serve a single page? I know I did. In the past when my web server at work melted down, I set up laptop with this simple script:
-
 while true; do nc -l -p 80 -q 1 < error.html; done
-
-The error.html page was just a very simple error message notifying our users about the outage, and giving them an estimate of when it would be fixed. It took me 3 minutes to set up, and probably saved us many angry support calls.
